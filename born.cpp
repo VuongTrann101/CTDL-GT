@@ -26,7 +26,9 @@ int binary_search(Born a[], int n, int x){
     return -1;
 }
 
+
 //-------------------------------------------------------------------------------------------------------------------------
+
 
 // count[] chi so dem tuong ung vi tri cua moi nam sinh, neu nam sinh co so luong nguoi can tim thi tang bien dem
 
@@ -68,6 +70,7 @@ void CountBS(Born a[], int n, int x, int count[]) {
 
 //-------------------------------------------------------------------------------------------------------------------------
 
+
 int FoundMax(Born a[], int n)
  { int index = 0;
  	for (int i = 1; i<n; i++) {
@@ -83,12 +86,9 @@ int FoundMin(Born a[], int n)
 	 }
 	 return index;
  }
- 
-//-------------------------------------------------------------------------------------------------------------------------
-
-
 
 //-------------------------------------------------------------------------------------------------------------------------
+
 
 int main() {
 
@@ -101,6 +101,10 @@ int main() {
 	};
 	
 	//-------------------------------------------------------------------------------------------------------------------------
+	int count[51]={0};
+    int x; 
+	printf("Nhap so can tim x la: "); scanf("%d", &x);
+	
 	int count[51]={0};
     int x; 
 	printf("Nhap so can tim x la: "); scanf("%d", &x);
@@ -119,12 +123,16 @@ int main() {
     for (int i = 0; i<51;i++) {
     	if (count[i]!=0) printf("%d ", People[i].date);
 }
-
 	//--------------------------------------------------------------------------------------------------------------------------
-   // tim max, min
-   
+
+	// tim max, min
    printf("\nNam nguoi sinh nhieu nhat va it nhat la: %d va %d \n", People[FoundMax(People,51)].date, People[FoundMin(People,51)].date);
    
 
    return 0;
 }
+
+
+
+	
+   
