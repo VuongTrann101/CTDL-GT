@@ -131,7 +131,7 @@ int main() {
     In(&q);
 
    
-    printf("Thanh toan khach hang dau tien...\n");
+    printf("Thanh toan khach hang dau tien\n");
     dequeue(&q);
 
    
